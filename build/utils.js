@@ -4,7 +4,6 @@
 3. 生成styleLoaders用于加载不在.vue文件中的单独存在的样式文件
  */
 
-/* eslint-disable */
 let path = require('path');
 let config = require('../config');
 // extract-text-webpack-plugin可以提取bundle中的特定文本，将提取后的文本单独存放到另外的文件

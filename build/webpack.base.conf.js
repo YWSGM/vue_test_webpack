@@ -3,15 +3,14 @@
     配置模块resolve规则
     配置不同类型模块的处理规则
  */
-/* eslint-disable */
 
-let path = require('path');
-let fs = require('fs');
-let utils = require('./utils');
-let config = require('../config');
-let vueLoaderConfig = require('./vue-loader.conf');
+const path = require('path');
+// let fs = require('fs');
+const utils = require('./utils');
+const config = require('../config');
+const vueLoaderConfig = require('./vue-loader.conf');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
-const webpack = require('webpack');
+// const webpack = require('webpack');
 
 // Require statement not part of import statement.eslint@typescript-eslint/no-var-requires
 
@@ -112,10 +111,10 @@ module.exports = {
   },
   plugins: [
     // new webpack.optimize.CommonsChunkPlugin('common.js'),
-    new webpack.ProvidePlugin({
-      $:"jquery",
-      jQuery:"jquery"
-    }),
+    // new webpack.ProvidePlugin({
+    //   $:"jquery",
+    //   jQuery:"jquery"
+    // }),
     new VueLoaderPlugin()
   ]
 };

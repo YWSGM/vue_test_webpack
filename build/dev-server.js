@@ -9,8 +9,6 @@
  * 自动打开浏览器并打开特定网址（localhost:8080）
  */
 
-/* eslint-disable */
-
 // 检查NodeJS和npm的版本
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 require('./check-versions')();
@@ -35,7 +33,7 @@ const webpack = require('webpack');
 // 这里使用该插件可以将前端开发中涉及到的请求代理到提供服务的后台服务器上，方便与服务器对接
 const proxyMiddleware = require('http-proxy-middleware');
 // 开发环境下的webpack配置
-const webpackConfig = require('./webpack.dev.conf'),
+const webpackConfig = require('./webpack.dev.conf.js'),
 
   // dev-server 监听的端口，如果没有在命令行传入端口号，则使用config.dev.port设置的端口，例如8080
   port = process.env.PORT || config.dev.port,

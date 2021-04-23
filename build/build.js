@@ -2,7 +2,6 @@
 删除目标文件夹
 执行webpack构建
 输出信息 */
-/* eslint-disable */
 
 // 检查NodeJS和npm的版本
 require('./check-versions')();

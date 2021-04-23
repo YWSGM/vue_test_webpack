@@ -4,7 +4,6 @@
     配置Source Maps
     配置webpack插件
  */
-/* eslint-disable */
 
 let utils = require('./utils');
 let webpack = require('webpack');

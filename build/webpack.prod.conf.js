@@ -6,7 +6,6 @@
  webpack-bundle分析
  说明： webpack插件里面多了丑化压缩代码以及抽离css文件等插件。
  */
-/* eslint-disable */
 let path = require('path');
 let utils = require('./utils');
 let webpack = require('webpack');

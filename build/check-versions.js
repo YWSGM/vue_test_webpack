@@ -1,5 +1,3 @@
-/* eslint-disable */
-
 // chalk, 用于在控制台输出带颜色字体的插件
 let chalk = require('chalk');
 // semver, 语义化版本检查插件（The semantic version parser used by npm）
