@@ -99,12 +99,12 @@ app.use(staticPath, express['static']('./static'));
 // 访问链接
 const uri = 'http://localhost:' + port;
 
-  // 创建promise，在应用服务启动之后resolve
-  // 便于外部文件require了这个dev-server之后的代码编写
-  let _resolve,
-  readyPromise = new Promise((resolve) => {
-    _resolve = resolve;
-  });
+// 创建promise，在应用服务启动之后resolve
+// 便于外部文件require了这个dev-server之后的代码编写
+let _resolve;
+const readyPromise = new Promise((resolve) => {
+  _resolve = resolve;
+});
 
 console.log('> Starting dev server...');
 // webpack-dev-middleware等待webpack完成所有编译打包之后输出提示语到控制台，表明服务正式启动

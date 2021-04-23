@@ -18,7 +18,7 @@ let chalk = require('chalk');
 let webpack = require('webpack');
 let config = require('../config');
 let webpackConfig = require('./webpack.prod.conf'),
-spinner = ora('building for production...');
+  spinner = ora('building for production...');
 
 spinner.start(); // 开启loading动画
 

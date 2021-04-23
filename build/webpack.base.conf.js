@@ -12,8 +12,6 @@ const vueLoaderConfig = require('./vue-loader.conf');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 // const webpack = require('webpack');
 
-// Require statement not part of import statement.eslint@typescript-eslint/no-var-requires
-
 // 获取绝对路径
 function resolve(dir) {
   return path.join(__dirname, '..', dir);

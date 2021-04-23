@@ -12,7 +12,6 @@ let ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 // 资源文件的存放路径
 exports.assetsPath = function (_path) {
-  console.log(process.env.NODE_ENV)
   let assetsSubDirectory = process.env.NODE_ENV === 'production'
     ? config.build.assetsSubDirectory
     : config.dev.assetsSubDirectory;
