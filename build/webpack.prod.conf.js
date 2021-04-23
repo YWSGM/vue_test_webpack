@@ -72,7 +72,7 @@ let OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin'),
       // 将产品文件的引用注入到index.html
       new HtmlWebpackPlugin({
         filename: config.build.index,
-        template: '../public/index.html',
+        template: './public/index.html',
         inject: true,
         minify: {
           // 删除index.html中的注释

@@ -20,7 +20,7 @@ function resolve(dir) {
 module.exports = {
   // webpack入口文件
   entry: {
-    app: '../src/main.js'
+    app: './src/main.js'
   },
   // webpack输出路径和命名规则
   output: {

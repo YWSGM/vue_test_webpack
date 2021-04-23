@@ -44,7 +44,7 @@ module.exports = merge(baseWebpackConfig, {
     // 自动将依赖注入html模板，并输出最终的html文件到目标文件夹
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: '../public/index.html',
+      template: './public/index.html',
       inject: true
     }),
     new FriendlyErrorsPlugin()
