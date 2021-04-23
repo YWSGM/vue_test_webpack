@@ -22,6 +22,7 @@ exports.assetsPath = function (_path) {
 
 // 生成css、sass、scss等各种用来编写样式的语言所对应的loader配置
 exports.cssLoaders = function (options) {
+  // eslint-disable-next-line no-param-reassign
   options = options || {};
   // css-loader配置
   let cssLoader = {

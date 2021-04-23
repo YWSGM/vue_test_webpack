@@ -1,6 +1,6 @@
 const utils = require('./utils');
-const config = require('../config');
-const isProduction = process.env.NODE_ENV === 'production';
+const config = require('../config'),
+  isProduction = process.env.NODE_ENV === 'production';
 
 module.exports = {
   // 处理.vue文件中的样式
